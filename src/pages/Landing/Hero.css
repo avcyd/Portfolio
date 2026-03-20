@@ -1,0 +1,58 @@
+.hero {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  min-height: 100dvh;
+  color: WHITE;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 74dvh;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 3;
+}
+
+.navWrapper {
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: clamp(2vw, 2rem, 5vw);
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.301);
+}
+
+.selected {
+  color: white;
+}
+
+h1 {
+  padding: 0;
+  margin: 1rem;
+}
+
+p {
+  color: rgb(148, 148, 148);
+}
