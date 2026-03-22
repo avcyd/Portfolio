@@ -101,9 +101,9 @@ export default function Orb({
       return vec4(colorIn.rgb / (a + 1e-5), a);
     }
 
-const vec3 baseColor1 = vec3(0.631, 0.631, 0.631);
-    const vec3 baseColor2 = vec3(1, 1, 1);
-    const vec3 baseColor3 = vec3(0.349, 0.349, 0.349);
+ const vec3 baseColor1 = vec3(0.75, 0.05, 0.08);
+    const vec3 baseColor2 = vec3(0.85, 0.20, 0.05);
+    const vec3 baseColor3 = vec3(0.20, 0.00, 0.02);
     const float innerRadius = 0.7;
     const float noiseScale = 0.5;
 

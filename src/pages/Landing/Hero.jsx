@@ -30,26 +30,6 @@ function Hero() {
   ];
   return (
     <div className="hero">
-      <div
-        className="orb"
-        style={{
-          width: "100%",
-          height: "600px",
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -48%)",
-          zIndex: 1,
-        }}
-      >
-        <Orb
-          hoverIntensity={1.1}
-          rotateOnHover={false}
-          hue={0}
-          forceHoverState={false}
-          backgroundColor="#000000"
-        />
-      </div>
       <div className="navbar">
         <div className="navWrapper text-xs">
           <NavLink to="/" className="selected">
@@ -58,6 +38,15 @@ function Hero() {
           <NavLink to="/">Projects</NavLink>
           <NavLink to="/">Contact</NavLink>
         </div>
+      </div>
+      <div className="orb">
+        <Orb
+          hoverIntensity={1.1}
+          rotateOnHover={false}
+          hue={0}
+          forceHoverState={false}
+          backgroundColor="#000000"
+        />
       </div>
       <div className="heroContent">
         <div>
