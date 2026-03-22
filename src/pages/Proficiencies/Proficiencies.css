@@ -1,0 +1,53 @@
+.proficiency {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  min-height: 100dvh;
+  color: WHITE;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.proficiencyContent h2,
+.proficiencyContent p {
+  text-align: center;
+}
+.proficiencyContent p {
+  margin-bottom: 2rem;
+  color: #8a8f98;
+}
+.skillset {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.skillset > * {
+  flex: 1;
+  min-width: 250px;
+}
+
+.skills {
+  background-color: #92949934;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  font-weight: 250;
+}
+
+.skillsContainer {
+  overflow-x: hidden;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+
+.skillset p {
+  text-align: left;
+}

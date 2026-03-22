@@ -22,7 +22,7 @@
   z-index: 2;
   pointer-events: none;
   gap: clamp(1.5vh, 2.5rem, 3.5vh);
-  margin-top: 3.5rem;
+  margin-top: 3.8rem;
 }
 
 .orb {
@@ -56,7 +56,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.301);
+  color: #8a8f98;
 }
 
 .selected {
@@ -71,7 +71,7 @@
 }
 
 .heroContent p {
-  color: rgb(148, 148, 148);
+  color: #8a8f98;
   max-width: 38ch;
 }
 
