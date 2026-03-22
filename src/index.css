@@ -22,7 +22,7 @@ body {
 }
 
 #root {
-  width: 1350px;
+  width: 1480px; /*1350px before*/
   max-width: 100%;
   margin: 0 auto;
 
@@ -67,7 +67,8 @@ h2,
 h3,
 h4,
 p,
-.body {
+.body,
+.text-xs {
   margin: 0;
 }
 h1,
@@ -87,6 +88,7 @@ h2 {
   line-height: 1.25;
   font-weight: 600;
   letter-spacing: -2px;
+  margin-bottom: 0.2rem;
 }
 h3 {
   font-size: 2.1rem;

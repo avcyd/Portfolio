@@ -6,7 +6,7 @@ const tech = [
       "HTML",
       "CSS",
       "JavaScript",
-
+      "React Native",
       "React",
       "TailwindCSS",
       "Flutter",

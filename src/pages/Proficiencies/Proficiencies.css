@@ -11,26 +11,38 @@
   justify-content: center;
 }
 
+.proficiencyContent {
+  padding: 1rem;
+}
 .proficiencyContent h2,
 .proficiencyContent p {
   text-align: center;
 }
 .proficiencyContent p {
   margin-bottom: 2rem;
-  color: #8a8f98;
+  color: rgba(255, 255, 255, 0.753);
 }
-.skillset {
+
+.skillset-achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.skillset,
+.achievements {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
 
-.skillset > * {
+.skillset > *,
+.achievements > * {
   flex: 1;
   min-width: 250px;
 }
 
-.skills {
+.skills,
+.education {
   background-color: #92949934;
   margin-right: 0.2rem;
   margin-bottom: 0.2rem;
@@ -50,4 +62,43 @@
 
 .skillset p {
   text-align: left;
+  color: #8a8f98;
+}
+
+.achievements .text-xs {
+  margin: 0;
+  text-align: left;
+}
+.achievements h4 {
+  margin-bottom: 0.34rem;
+}
+.achievementsContent,
+.educationContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(300px, 50%), 1fr));
+}
+
+.details {
+  border-left: 2px #8a8f98 solid;
+  padding-left: 0.8em;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0.6rem;
+}
+
+@media (max-width: 988px) {
+  .skillset {
+    flex-direction: column;
+  }
+  .title {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 868px) {
+  .achievements {
+    flex-direction: column;
+  }
 }
