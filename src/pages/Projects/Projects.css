@@ -7,7 +7,6 @@
   margin: 0;
   min-height: 100dvh;
   color: WHITE;
-  overflow: hidden;
 }
 
 .projectContent {
@@ -33,7 +32,6 @@
 }
 
 .projectList > * {
-  flex: 1;
   min-width: 250px;
 }
 
