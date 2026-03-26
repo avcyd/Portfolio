@@ -4,11 +4,26 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navWrapper text-xs">
-        <NavLink to="/" className="selected">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "selected" : "")}
+        >
           Home
         </NavLink>
-        <NavLink to="/">Projects</NavLink>
-        <NavLink to="/">Contact</NavLink>
+
+        <NavLink
+          to="/projects"
+          className={({ isActive }) => (isActive ? "selected" : "")}
+        >
+          Projects
+        </NavLink>
+
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? "selected" : "")}
+        >
+          Contact
+        </NavLink>
       </div>
     </div>
   );

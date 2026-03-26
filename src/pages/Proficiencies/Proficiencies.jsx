@@ -11,7 +11,7 @@ function Proficiencies() {
   const backendData = techStack.find((tech) => tech.id === 2);
   const toolsData = techStack.find((tech) => tech.id === 3);
   return (
-    <div className="proficiency">
+    <div className="proficiency" id="proficiency">
       <div className="proficiencyContent">
         <div className="heading">
           <GradientText
@@ -29,7 +29,7 @@ function Proficiencies() {
         <div className="skillset-achievements">
           <div className="skillset">
             <BorderGlow
-              edgeSensitivity={30}
+              edgeSensitivity={35}
               glowColor="40 80 80"
               backgroundColor="#080000"
               borderRadius={28}
@@ -37,7 +37,7 @@ function Proficiencies() {
               glowIntensity={1}
               coneSpread={25}
               animated={false}
-              colors={["#bb1d01", "#eb0062", "#750a1b"]}
+              colors={["#ff0000", "#ff71ac", "#ffab5d"]}
             >
               <div style={{ padding: "1em" }}>
                 <div className="title">

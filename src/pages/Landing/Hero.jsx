@@ -26,7 +26,9 @@ function Hero() {
         </div>
 
         <div className="ctaBtn">
-          <span>Get Started</span>
+          <span>
+            <a href="#proficiency">Get Started</a>
+          </span>
         </div>
       </div>
     </div>
