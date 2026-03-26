@@ -1,44 +1,12 @@
 import { NavLink } from "react-router-dom";
-import {
-  SiReact,
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-} from "react-icons/si";
 
 import Orb from "../../components/orb/Orb.jsx";
-import GlareHover from "../../components/glarehover/GlareHover.jsx";
-
-import GradientText from "../../components/gradienttext/GradientText.jsx";
 
 import "./Hero.css";
 
 function Hero() {
-  const techLogos = [
-    { node: <SiReact />, title: "React", href: "https://react.dev" },
-    { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-    {
-      node: <SiTypescript />,
-      title: "TypeScript",
-      href: "https://www.typescriptlang.org",
-    },
-    {
-      node: <SiTailwindcss />,
-      title: "Tailwind CSS",
-      href: "https://tailwindcss.com",
-    },
-  ];
   return (
     <div className="hero">
-      <div className="navbar">
-        <div className="navWrapper text-xs">
-          <NavLink to="/" className="selected">
-            Home
-          </NavLink>
-          <NavLink to="/">Projects</NavLink>
-          <NavLink to="/">Contact</NavLink>
-        </div>
-      </div>
       <div className="orb">
         <Orb
           hoverIntensity={1.1}

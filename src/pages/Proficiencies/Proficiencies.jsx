@@ -15,7 +15,7 @@ function Proficiencies() {
       <div className="proficiencyContent">
         <div className="heading">
           <GradientText
-            colors={["#cc0000", "#c26a4c", "#a00b00"]}
+            colors={["#cc0000", "#c26a4c", "#910b01"]}
             animationSpeed={8}
             showBorder={false}
             className="custom-class"
@@ -141,7 +141,7 @@ function Proficiencies() {
                       Introduction to Cybersecurity
                     </span>
                     <div className="details">
-                      <p className="text-xs">Cisco</p>
+                      <p className="text-xs">Cisco Networking Academy</p>
                       <p className="text-xs">Taken 2026</p>
                     </div>
                   </div>{" "}
@@ -156,10 +156,10 @@ function Proficiencies() {
                   </div>
                   <div className="achievementItem">
                     <span className="education">
-                      Fundamentals of Cybersecurity{" "}
+                      Cybersecurity Fundamentals{" "}
                     </span>
                     <div className="details">
-                      <p className="text-xs">IBM Skillsbuild</p>
+                      <p className="text-xs">IBM SkillsBuild</p>
                       <p className="text-xs">Taken 2026</p>
                     </div>
                   </div>{" "}
@@ -191,7 +191,7 @@ function Proficiencies() {
                       <p className="text-xs">
                         Bachelor of Science in Computer Science
                       </p>
-                      <p className="text-xs">2021 - Current College</p>
+                      <p className="text-xs">2024 - Current College</p>
                     </div>
                   </div>
                   <div className="educationItem">
@@ -200,7 +200,7 @@ function Proficiencies() {
                       <p className="text-xs">
                         Science, Technology, Engineering, Mathematics
                       </p>
-                      <p className="text-xs">2018 - 2021 Senior High</p>
+                      <p className="text-xs">2021 - 2024 Senior High</p>
                     </div>
                   </div>
                 </div>

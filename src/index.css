@@ -16,9 +16,9 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100dvh;
-  overflow-x: hidden;
   width: 100%;
   font-family: "Inter";
+  /*overflow-x: hidden; */
 }
 
 #root {

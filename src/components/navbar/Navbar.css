@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+  justify-content: center;
+  position: absolute;
+  z-index: 6;
+  width: 100%;
+  align-items: center;
+  left: 0;
+}
+
+.navWrapper {
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: clamp(2vw, 2rem, 5vw);
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: #8a8f98;
+}
+
+.selected {
+  color: white;
+}
