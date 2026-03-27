@@ -5,6 +5,10 @@ import Orb from "../../components/orb/Orb.jsx";
 import "./Hero.css";
 
 function Hero() {
+  const scrollToProficiency = () => {
+    const section = document.getElementById("proficiency");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="hero">
       <div className="orb">
@@ -26,9 +30,7 @@ function Hero() {
         </div>
 
         <div className="ctaBtn">
-          <span>
-            <a href="#proficiency">Get Started</a>
-          </span>
+          <span onClick={scrollToProficiency}>Get Started</span>
         </div>
       </div>
     </div>

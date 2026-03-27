@@ -10,6 +10,7 @@ function Proficiencies() {
   const frontendData = techStack.find((tech) => tech.id === 1);
   const backendData = techStack.find((tech) => tech.id === 2);
   const toolsData = techStack.find((tech) => tech.id === 3);
+
   return (
     <div className="proficiency" id="proficiency">
       <div className="proficiencyContent">
