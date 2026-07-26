@@ -1,0 +1,101 @@
+.contact {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+  padding-bottom: 3rem;
+}
+
+.contactContent {
+  margin-top: 5.5rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 820px;
+}
+
+.contactLead {
+  margin-bottom: 1.75rem !important;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.3rem 1.2rem;
+  min-height: 108px;
+}
+
+.contactIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.contactCard:hover .contactIcon {
+  color: #fff;
+  border-color: rgba(187, 29, 1, 0.5);
+  background: rgba(145, 11, 1, 0.2);
+}
+
+.contactMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.contactMeta h4 {
+  font-size: 1.35rem;
+  margin-bottom: 0.2rem;
+}
+
+.contactMeta .text-xs {
+  color: var(--text-muted);
+}
+
+.contactArrow {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  transition:
+    color 0.3s ease,
+    transform 0.35s ease;
+}
+
+.contactCard:hover .contactArrow {
+  color: #fff;
+  transform: translate(2px, -2px);
+}
+
+.contactNote {
+  margin-top: 2.25rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.split-chars {
+  display: inline-block;
+  perspective: 400px;
+}
+
+.split-char {
+  display: inline-block;
+  transform-origin: center bottom;
+}

@@ -1,27 +1,51 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   justify-content: center;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 6;
   width: 100%;
   align-items: center;
-  left: 0;
+  pointer-events: none;
 }
 
 .navWrapper {
-  padding: 1.2rem 3rem;
-  border-radius: 50px;
+  padding: 0.85rem 2.2rem;
   display: flex;
   flex-direction: row;
-  gap: clamp(2vw, 2rem, 5vw);
+  gap: clamp(1.5rem, 3vw, 2.8rem);
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  color: #8a8f98;
+  color: var(--text-muted);
+  pointer-events: auto;
 }
 
-.selected {
+.navLink {
+  position: relative;
+  color: var(--text-muted);
+  transition: color 0.25s ease;
+  padding: 0.15rem 0 0.35rem;
+}
+
+.navLink .glow-line {
+  bottom: -0.55rem;
+}
+
+.navLink:hover {
+  color: #fff;
+}
+
+.navLink:hover .glow-line,
+.navLink.selected .glow-line {
+  width: 92%;
+  opacity: 1;
+}
+
+.navLink.selected {
   color: white;
 }

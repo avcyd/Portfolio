@@ -5,7 +5,7 @@ const projects = [
     description:
       "A personal mood and wellbeing tracker with daily logs, journaling, and wellbeing projections. Focused mainly on frontend development.",
     stack: ["React", "JavaScript", "CSS", "Express", "MongoDB"],
-    link: "https://github.com/berired/UnMasked",
+    link: "https://github.com/avcyd/UnMasked",
   },
   {
     id: 2,

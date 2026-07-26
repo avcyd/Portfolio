@@ -1,20 +1,23 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import Hero from "./pages/Landing/Hero.jsx";
-import Proficiencies from "./pages/Proficiencies/Proficiencies.jsx";
 import Projects from "./pages/Projects/Projects.jsx";
-import Navbar from "././components/navbar/Navbar.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
+import AmbientBackground from "./components/ambient/AmbientBackground.jsx";
 import "./App.css";
-import { SiHomepage } from "react-icons/si";
 
 function App() {
   return (
     <>
+      <AmbientBackground />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <main className="app-main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
     </>
   );
 }

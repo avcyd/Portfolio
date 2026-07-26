@@ -1,0 +1,54 @@
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Soft orbs via radial-gradient only — no filter:blur (that tanks FPS) */
+.ambient__orb {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.ambient__orb--a {
+  width: 340px;
+  height: 340px;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(145, 11, 1, 0.55) 0%,
+    rgba(117, 10, 27, 0.18) 42%,
+    transparent 70%
+  );
+}
+
+.ambient__orb--b {
+  width: 220px;
+  height: 220px;
+  bottom: 18%;
+  right: 6%;
+  background: radial-gradient(
+    circle,
+    rgba(187, 29, 1, 0.32) 0%,
+    rgba(83, 1, 1, 0.12) 45%,
+    transparent 70%
+  );
+}
+
+.ambient__orb--c {
+  width: 180px;
+  height: 180px;
+  top: 42%;
+  left: 4%;
+  background: radial-gradient(
+    circle,
+    rgba(117, 10, 27, 0.28) 0%,
+    transparent 68%
+  );
+}

@@ -1,31 +1,37 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "motion/react";
 import "./Navbar.css";
+
+const links = [
+  { to: "/", label: "Home", end: true },
+  { to: "/projects", label: "Projects" },
+  { to: "/contact", label: "Contact" },
+];
+
 function Navbar() {
   return (
-    <div className="navbar">
-      <div className="navWrapper text-xs">
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? "selected" : "")}
-        >
-          Home
-        </NavLink>
-
-        <NavLink
-          to="/projects"
-          className={({ isActive }) => (isActive ? "selected" : "")}
-        >
-          Projects
-        </NavLink>
-
-        <NavLink
-          to="/contact"
-          className={({ isActive }) => (isActive ? "selected" : "")}
-        >
-          Contact
-        </NavLink>
+    <motion.nav
+      className="navbar"
+      initial={{ opacity: 0, y: -16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <div className="navWrapper glass text-xs">
+        {links.map((link) => (
+          <NavLink
+            key={link.to}
+            to={link.to}
+            end={link.end}
+            className={({ isActive }) =>
+              `navLink${isActive ? " selected" : ""}`
+            }
+          >
+            {link.label}
+            <span className="glow-line" aria-hidden="true" />
+          </NavLink>
+        ))}
       </div>
-    </div>
+    </motion.nav>
   );
 }
 
