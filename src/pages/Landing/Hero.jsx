@@ -27,7 +27,7 @@ function Hero() {
     <section className="hero">
       <div className="orb">
         <Orb
-          hoverIntensity={0.35}
+          hoverIntensity={1.05} // .35 previously
           rotateOnHover={false}
           hue={0}
           forceHoverState={false}
